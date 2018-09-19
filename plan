@@ -1,0 +1,21 @@
+Pre checks/tasks:
+Check for free space in /var and /tmp folders
+Check for compapability for db and application regarding the new packets that will be installed
+
+
+Open ticket describing the change, goals and date
+Present the change on TAB/CAB meeting
+Arrange resourses from DB team and from Application team on the date
+
+
+
+On the date of change:
+Create snapshot/back up of the system
+Ask DB team to shutdown DB and wait for confirmation.
+After confirmation ask Application team to shutdown the running applications.
+After getting confirmation  perform yum update -y
+Reboot the system
+After the reboot check if new kernel is installed, all services are started and all mount points are mounted accordingly to /etc/fstab
+Ask for DB team start their databases
+Ask for application for start their application and check if everything is ok
+Contact the customer for confirmation if everything is ok
